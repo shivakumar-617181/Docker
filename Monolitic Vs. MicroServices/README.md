@@ -10,7 +10,7 @@ A Monolithic Application is Built as A Single Unified Unit. This Architecture Tr
 **Disadvantages:-**
 
 **Scalability Issues:**  Scaling Requires the Entire Application, Which Can be Inefficient and Costly. 
-**Deployment Risk: **    Any Change Requires a Full Redeployment, Increasing Risk and Slowing Development Cycles. 
+****Deployment Risk: ** **   Any Change Requires a Full Redeployment, Increasing Risk and Slowing Development Cycles. 
 **Technology Lock-in:**  Sticking To One Technology Makes it Hard to Adopt New Frameworks. 
 **Complexity at Scale:** As The Codebase Grows, It Becomes Difficult to Maintain. 
 
