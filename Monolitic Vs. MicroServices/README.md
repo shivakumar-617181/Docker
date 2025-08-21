@@ -3,6 +3,7 @@ A Monolithic Application is Built as A Single Unified Unit. This Architecture Tr
 
 **Advantages:-**
 
+
 **Simplicity:**    Easier to develop, debug, and deploy initially. 
 
 **Rapid Development:**  Good for Small Teams And Building Minimum Viable Products. 
