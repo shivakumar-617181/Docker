@@ -39,7 +39,9 @@ A Microservices Architecture is a Collection of Smaller, Independently Deployabl
 
 **Disadvantages:-**
 
-Increased Complexity:  Managing Multiple Independent Services, their Communication, and Deployment is More Complex. 
-Operational Overhead: Requires Advanced Infrastructure, Containerization, and Orchestration Tools. 
-Debugging Difficulty: Identifying Issues Can be Harder as it May Involve Tracing Problems Across Multiple Services. 
+**Increased Complexity:** Managing Multiple Independent Services, their Communication, and Deployment is More Complex. 
+
+**Operational Overhead:** Requires Advanced Infrastructure, Containerization, and Orchestration Tools. 
+
+**Debugging Difficulty:** Identifying Issues Can be Harder as it May Involve Tracing Problems Across Multiple Services. 
 
