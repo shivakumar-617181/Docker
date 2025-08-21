@@ -20,24 +20,31 @@ EXPOSE
 
 **FROM:-**
  FROM Keyword Indiates that Base Image Which We are Going to Use for Our Image.
+ 
 **MAINTAINER:-**
  It will be Ued as Comments to Describe author/owner, Who is Maintaining the Docker File.
+ 
 **WORKDIR:-**
  This Keyword Used to Set the a Working Directory the Current Working Directory and Used on Which Directory Our Instruction are Going to Execute.
+ 
 **ENV:-**
  This Instruction is Used to Setup the Environment Varaibles For Our Container/Image.
+ 
 **USER:-**
  This key word is used to set the user for the container. If you didnot mentioned the user name by default the commands will be executed as root user.
  
 **LABEL:-**
  It is Used to label the image for identifucation purpose.
  LABEL <key> <value>
+ 
 **COPY:-**
  This Keyword Is Used to Copy Files From Host Server to Container. It is Simple Straight forward Copying the files.
  Syntax:- COPY <Source> <dest>
+ 
 **ADD:-**
  It Can also Used for Copying files from Host Server to Container. It has several Advantages when compared to COPY keyword. Like It will automatically extract the .tar.gz files & Adding the files from Remote URL files to our Image.
   Syntax:- ADD <Source> <dest>
+  
 **RUN:-**
  RUN Command will be executed while creating the Image.
 
