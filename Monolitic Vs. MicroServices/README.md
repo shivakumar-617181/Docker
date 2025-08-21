@@ -3,9 +3,11 @@ A Monolithic Application is Built as A Single Unified Unit. This Architecture Tr
 
 **Advantages:-**
 
-**Simplicity: **          Easier to develop, debug, and deploy initially. 
-**Rapid Development: **   Good for Small Teams And Building Minimum Viable Products. 
-**Consistent Stack: **    Often Uses a Single Technology Stack, Simplifying Development. 
+**Simplicity:**    Easier to develop, debug, and deploy initially. 
+
+**Rapid Development:**  Good for Small Teams And Building Minimum Viable Products. 
+
+**Consistent Stack:**   Often Uses a Single Technology Stack, Simplifying Development. 
 
 **Disadvantages:-**
 
@@ -16,6 +18,9 @@ A Monolithic Application is Built as A Single Unified Unit. This Architecture Tr
 **Technology Lock-in:**  Sticking To One Technology Makes it Hard to Adopt New Frameworks. 
 
 **Complexity at Scale:** As The Codebase Grows, It Becomes Difficult to Maintain. 
+
+
+
 
 **Microservices Architecture:-**
 A Microservices Architecture is a Collection of Smaller, Independently Deployable Services. A Microservices Architecture Structures an Application as a Collection of Small, Independent, and Loosely Coupled Services. 
