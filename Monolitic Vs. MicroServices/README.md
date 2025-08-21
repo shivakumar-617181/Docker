@@ -27,9 +27,13 @@ A Microservices Architecture is a Collection of Smaller, Independently Deployabl
 
 **Adavantages:-**
 **Improved Scalability:**  Individual Services Can be Scaled Independently, Improving Resource Use. 
+
 **Better Resilience:-**     The Failure of One Service Doesn't Bring Down The Entire Application. 
+
 **Technology Diversity:-**  Different Services Can Use Different Technologies, Frameworks, and Languages. 
+
 **Faster Deployment:-**     Changes Can be Deployed to Individual Services, Allowing for Frequent and Faster Updates. 
+
 **Easier Maintenance:-**    Smaller, Focused Services are Easier to Understand and Maintain. 
 
 **Disadvantages:-**
