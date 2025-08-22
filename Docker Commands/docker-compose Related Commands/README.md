@@ -1,22 +1,37 @@
-docker compose related commands:-
+**docker compose related commands:-**
 
-docker-compose up -d -f (docker-compose YMAL file)
-This Command is used to  start containers which are specified in the docker compose file.
+**docker-compose up -d -f (docker-compose YMAL file)**
 
-docker-compose stop
-This Command is Used to stop all docker-compose resources
+This Command is Used to  Start Proceeses Which are Specified In The docker-compose File.
 
-docker-compose down
-Used to Destroy the all docker-compose file related resources.
+**docker-compose stop**
 
-docker-compose logs -f 
-Shows all logs in real time of the docker-compose file related commands.
+This Command is Used to Stop all docker-compose file Resources
 
-docker-compose logs (serviceName)
-Shows logs of a specific service related docker-compose file which is used to create compose.
+**docker-compose down**
 
-docker-compose ps 
-It will shows the docker-compose related Processes/containers.
+This Command is Used to Destroy the all docker-compose File Related Resources.
 
-docker-compose top
-It will shows the all docker-compose resources consumption for the processes.
+**docker-compose logs -f**
+
+Shows all Logs In Real Time Of The docker-compose file Related Resources.
+
+**docker-compose logs (serviceName)**
+
+Shows Logs of Specific Service Related docker-compose file Which Is Used for Create the Compose.
+
+**docker-compose ps**
+
+It Will Shows The docker-compose Related Running Containers.
+
+**docker-compose ps -a**
+
+It Will Shows The docker-compose Related Running & Stopped Containers.
+
+
+**docker-compose top**
+
+It will Shows the All docker-compose Resources Consumption for the Processes.
+
+
+
