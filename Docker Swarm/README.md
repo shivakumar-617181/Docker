@@ -9,14 +9,15 @@ Docker Swarm is a Docker Native Container Orchestration Engine Built On Top of D
 **2).** For the Containers, the Container Management resources like Networking, Persistent Data like Volumes Details are Deployed in the Docker-Compose.yml file. (Sample docker compose volume file is pasted below).
 
 **3).** The Swarm Follows the Client Server and Node Architecture.
-     CLI    --> Where Client will Executes The Commands
-     Server --> Manages cluster state, Decides where to schedule containers. 
+     **CLI**    --> Where Client will Executes The Commands
+     **Server** --> Manages cluster state, Decides where to schedule containers. 
+     **Nodes:-**  --> Where Our Containers Will Run In The Cluster.
      
 **4).** **Volumes**:- Used for Persistent Storage In Swarm Services.
 
 **5).** **Overlay Networks**:- Allow Communication Between Services Across Nodes.
 
-**6).**  Based On The **Labels and Constraints** you Can Decide the Where our Manager Can Schedule the Containers in Side The Cluster.
+**6).**  Based On The **Labels and Constraints** and **Resource Availability** you Can Decide the Where our Swarm Manager Will Schedule the Containers in Side The Cluster.
 
 **7).** You Can Drain the Nodes, Manager For the Patching and Installing Updates In Our Cluster. 
 
