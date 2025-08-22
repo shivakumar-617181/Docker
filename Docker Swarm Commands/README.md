@@ -24,15 +24,15 @@ It will Displays the Services Which are Deployed Into The Cluster.
 
 This Command will displays the containers which are running In the node deployed using the service.
 
-**docker service ps <service-name>**
+**docker service ps (service-name)**
 
 This Command Will Displays The Containers Which Are Running For The Particular Service.
 
-**docker service rm <service-name>**
+**docker service rm (service-name)**
 
 This Command is used to remove the Service.
 
-**docker node rm <node-name>**
+**docker node rm (node-name)**
 
 This Command is used to remove the node from the Cluster.
 
@@ -41,5 +41,8 @@ This Command is used to remove the node from the Cluster.
 This Comand is used to scale the Replicas for respective Service.
 
 **docker node update <node-name> --label-add <key>=<value>**
+
+This Command is Used to Update/add the label for the Cluster.
+
 
 This Command is Used to Update/add the label for the Cluster.
