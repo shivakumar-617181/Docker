@@ -29,29 +29,29 @@ Sample Dokcer-Compose file is Listed Below.
 version: "3.8"
 
 services:
-  web:
-    image: nginx:latest
+  web: 
+    image: nginx:latest # Image Name for Our Frontend Application
     ports:
-      - "80:80"
+      - "80:80" # Port Forwarding Section
     networks:
-      - frontend
+      - frontend  # Overlay Network
     volumes:
       - web_data:/usr/share/nginx/html   # Mount volume into nginx content directory
     deploy:
-      replicas: 2
+      replicas: 2  # Define Replicas
       resources:
-        limits:
+        limits:   # Resource Limits for Our container
           cpus: "0.5"
           memory: "256M"
-      restart_policy:
+      restart_policy:  # Define Restart Policy If Our Container Is not Starting as Expected
         condition: on-failure
 
-  app:
-    image: myapp:1.0
-    networks:
+  app:  # App tier Defination
+    image: myapp:1.0   # Image name for the app tier
+    networks:          # Network Communication
       - frontend
       - backend
-    volumes:
+    volumes:           # Volume Mounts Section
       - app_logs:/var/log/myapp          # Persist application logs
     deploy:
       replicas: 3
@@ -62,16 +62,16 @@ services:
       restart_policy:
         condition: on-failure
 
-  db:
-    image: mysql:8.0
-    environment:
+  db:            # Defination Of the Data Base Tier
+    image: mysql:8.0  # mysql Image Defination
+    environment:    # Defining the Environment Variables Related to Initilization
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: mydb
       MYSQL_USER: myuser
       MYSQL_PASSWORD: mypass
-    networks:
+    networks:  # Network Section
       - backend
-    volumes:
+    volumes:    # Volume Mounts Section
       - db_data:/var/lib/mysql           # Persist database data
     deploy:
       replicas: 1
