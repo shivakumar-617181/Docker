@@ -49,3 +49,15 @@ It will delete all the stoped containers.
 **docker ps -aq --filter status="paused"**
 
 It will display the all paused containers.
+
+**docker system purne**
+
+It will deletes the the following 
+
+Stopped containers
+
+Unused networks
+
+Dangling images (not tagged or used by any container)
+
+Build cache.
