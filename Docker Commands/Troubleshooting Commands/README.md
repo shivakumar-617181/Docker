@@ -33,3 +33,10 @@ This Command is used to display system wide information
 docker system purne
 This Command is Used to delete
 all Stopped containers
+
+Unused networks
+
+Dangling images (not tagged or used by any container)
+
+Build cache
+
