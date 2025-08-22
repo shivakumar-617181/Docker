@@ -20,4 +20,80 @@ Docker Swarm is a Docker Native Container Orchestration Engine Built On Top of D
 
 **7).** You Can Drain the Nodes, Manager For the Patching and Installing Updates In Our Cluster. 
 
+Sample Dokcer-Compose file is Listed Below.   
+
+
+------------------------------------
+
+```
+version: "3.8"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    networks:
+      - frontend
+    volumes:
+      - web_data:/usr/share/nginx/html   # Mount volume into nginx content directory
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "256M"
+      restart_policy:
+        condition: on-failure
+
+  app:
+    image: myapp:1.0
+    networks:
+      - frontend
+      - backend
+    volumes:
+      - app_logs:/var/log/myapp          # Persist application logs
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "512M"
+      restart_policy:
+        condition: on-failure
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypass
+    networks:
+      - backend
+    volumes:
+      - db_data:/var/lib/mysql           # Persist database data
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "1G"
+      restart_policy:
+        condition: any
+
+# Define named volumes
+volumes:
+  web_data:
+  app_logs:
+  db_data:
+
+# Define overlay networks (needed for Swarm)
+networks:
+  frontend:
+    driver: overlay
+  backend:
+    driver: overlay
+```
+
 
