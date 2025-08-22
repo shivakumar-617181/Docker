@@ -14,19 +14,19 @@ Used to Search for a Image.
 
 Used to Pull a Image From Remote Registry to Local Docker Server
 
-**docker push  (registryname/reponame):tag**
+**docker push  (registryName/repoName):tag**
 
 This Command is Used to Push the Local Built Image to Remote Repository.
 
-**docker build -t (registryname/reponame):tag .**
+**docker build -t (registryName/repoName):tag .**
 
 This Command is Used to Build the Docker Image From the Dockerfile.  when the Docker File is Present Inside the Same Directory.
 
-**docker build -t (registryname/reponame):tag -f (pathpathofdockerfile)**
+**docker build -t (registryName/repoName):tag -f (pathOfDockerFile)**
 
 This Command is Used to Build the Docker Image From The Dockerfile. When Docker file Is Present In Another Directory.
 
-**docker rmi (imagename):tag**
+**docker rmi (imageName):tag**
 
 Command is Used to Remove the image
 
