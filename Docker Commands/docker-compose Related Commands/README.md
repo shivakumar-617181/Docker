@@ -1,4 +1,4 @@
-**docker compose related commands:-**
+**Docker Compose Related Commands:-**
 
 **docker-compose up -d -f (docker-compose YMAL file)**
 
