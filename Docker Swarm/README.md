@@ -4,12 +4,20 @@ Docker Swarm is a Docker Native Container Orchestration Engine Built On Top of D
 
 **Note:-** 
 
-1). In the Docker Swarm Method, The Containers Are Managed In The Form Service. Service Is Responsible for the Scalling, Fault tolerate, Service Discovery, Load Balancing Of The Containers.
-2). For the Containers, the Container Management resources like Networking, Persistent Data like Volumes Details are Deployed in the Docker-Compose.yml file. (Sample docker compose volume file is pasted below).
-3). The Swarm Follows the Client Server and Node Architecture.
+**1).** In the Docker Swarm Method, The Containers Are Managed In The Form Service. Service Is Responsible for the Scalling, Fault tolerate, Service Discovery, Load Balancing Of The Containers.
+
+**2).** For the Containers, the Container Management resources like Networking, Persistent Data like Volumes Details are Deployed in the Docker-Compose.yml file. (Sample docker compose volume file is pasted below).
+
+**3).** The Swarm Follows the Client Server and Node Architecture.
      CLI    --> Where Client will Executes The Commands
      Server --> Manages cluster state, Decides where to schedule containers. 
-4). Volumes:- Used for Persistent Storage In Swarm Services.
-5). Overlay Networks:- Allow Communication Between Services Across Nodes.
+     
+**4).** **Volumes**:- Used for Persistent Storage In Swarm Services.
+
+**5).** **Overlay Networks**:- Allow Communication Between Services Across Nodes.
+
+**6).**  Based On The **Labels and Constraints** you Can Decide the Where our Manager Can Schedule the Containers in Side The Cluster.
+
+**7).** You Can Drain the Nodes, Manager For the Patching and Installing Updates In Our Cluster. 
 
 
