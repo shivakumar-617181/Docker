@@ -19,6 +19,6 @@ Rapid Deployment:-   Containers Enable Faster & More Reliable Deployments Throug
 Uniformity Across Environments:- Developers, Testers, and Operations (SRE) Teams Use The Same Container Image Throughout the SDLC. Reduces Environment Drift and Misconfigurations.
 
 
-comparison with micro services and monolithic deployments:-
+Comparison With Micro Services and Monolithic Deployments:-
 
-A monolithic application is built as a single unified unit where as a microservices architecture is a collection of smaller, independently deployable services in the form of containers.
+A Monolithic Application is Built as a Single Unified Unit Where as a Microservices Architecture is a Collection of Smaller, Independently Deployable Services In The Form of Containers.
