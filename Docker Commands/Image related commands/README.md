@@ -4,28 +4,31 @@
 
 **docker images**
 
-Displays the all images
+Displays the all Images
 
-docker search (imageName)
-Used to search for a Image.
+**docker search (imageName)**
 
-docker pull (imageName)
-Used to pull a Image from remote registry to local Docker host
+Used to Search for a Image.
 
-docker push  (registryname/reponame):tag
-This Command is Used to Push the local built image to remote repository.
+**docker pull (imageName)**
 
-docker build -t (registryname/reponame):tag .
-this command is Used to build the docker image from the Dockerfile. This Command is used docker file is present inside the same directory.
+Used to Pull a Image From Remote Registry to Local Docker Server
 
-docker build -t (registryname/reponame):tag -f (pathpathofdockerfile)
-this command is Used to build the docker image from the Dockerfile. This Command is used if Docker file is present in another directory.
+**docker push  (registryname/reponame):tag**
+This Command is Used to Push the Local Built Image to Remote Repository.
 
-docker rmi (imagename):tag
+**docker build -t (registryname/reponame):tag .**
+
+This Command is Used to Build the Docker Image From the Dockerfile.  when the Docker File is Present Inside the Same Directory.
+
+**docker build -t (registryname/reponame):tag -f (pathpathofdockerfile)**
+This Command is Used to Build the Docker Image From The Dockerfile. When Docker file Is Present In Another Directory.
+
+**docker rmi (imagename):tag**
 Command is Used to Remove the image
 
-docker inspect (imageName)
+**docker inspect (imageName)**
 This Command is Used to Inspect / to view the layers Information about the docker Image.
 
-docker image purne
+**docker image purne**
 To Remove all unused docker Images.
