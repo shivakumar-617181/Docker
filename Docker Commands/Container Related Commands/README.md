@@ -45,6 +45,9 @@ It will kills container with out grace period.
 docker rm -f (containerName)
 It will removes the container forcefully.
 
+docker cp (containerName):(path of container directory/file) (hostpath)/(file/directoryName)
+Used to copy files from local host directory to running container path.
+
 docker rm -f $(docker ps -aq --filter status="exited")
 It will delete all the stooped containers. 
 
