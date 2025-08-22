@@ -1,1 +1,205 @@
 
+**Docker Process Management Commands:-**
+
+docker ps
+shows All Running Containers
+
+docker ps -a 
+Displays Running as Well As Stopped Containers
+
+docker run -it --name=(desired Container Name) (imagename):tag
+This Command is Used to Run A Container In Intarctive Mode
+
+docker run -d --name=(desired Container Name) (imagename):tag
+This Command is Used to Run A Container In detach Mode
+
+docker stop
+This Command is Used to Stop The Container
+
+docker kill
+This Command is Used to kill a Container.
+
+
+docker Image Related Commands:-
+docker images
+Displays the all images
+
+docker search (imageName)
+Used to search for a Image.
+
+docker pull (imageName)
+Used to pull a Image from remote registry to local Docker host
+
+docker push  (registryname/reponame):tag
+This Command is Used to Push the local built image to remote repository.
+
+docker build -t (registryname/reponame):tag .
+this command is Used to build the docker image from the Dockerfile. This Command is used docker file is present inside the same directory.
+
+docker build -t (registryname/reponame):tag -f (pathpathofdockerfile)
+this command is Used to build the docker image from the Dockerfile. This Command is used if Docker file is present in another directory.
+
+docker rmi (imagename):tag
+Command is Used to Remove the image
+
+docker inspect (imageName)
+This Command is Used to Inspect / to view the layers Information about the docker Image.
+
+docker image purne
+To Remove all unused docker Images.
+
+
+docker volume and ports:-
+
+docker volume ls 
+Used to list docker volumes
+
+docker volume create (volumeName)
+This Command used to create the docker volume 
+
+docker volume inspect (volumeName)
+This Commmand is Used to show about docker volume metadata
+
+docker volume purne
+To Delete all volumes which are not attached to a container
+
+docker run -v (hostdirectorypath):(containerdirectory) (imageName)
+This Command is Used to attach container directory path host local path. so that Our data will be Secured in the Host Path.
+
+docker cp (containerName):(path of container directory/file) (hostpath)/(file/directoryName)
+Used to copy files from local host directory to running container path.
+
+container related Commands:-
+
+docker run -d -p (hostPort):(containerPort) (imageName)
+Used to run container with port forwarding to route the traffic.
+
+docker port (containerName)
+Used to list a port on which port container is running.
+
+
+
+docker compose related commands:-
+
+docker-compose up -d -f (docker-compose YMAL file)
+This Command is used to  start containers which are specified in the docker compose file.
+
+docker-compose stop
+This Command is Used to stop all docker-compose resources
+
+docker-compose down
+Used to Destroy the all docker-compose file related resources.
+
+docker-compose logs -f 
+Shows all logs in real time of the docker-compose file related commands.
+
+docker-compose logs (serviceName)
+Shows logs of a specific service related docker-compose file which is used to create compose.
+
+docker-compose ps 
+It will shows the docker-compose related Processes/containers.
+
+docker-compose top
+It will shows the all docker-compose resources consumption for the processes.
+
+
+Troble Shooting Commands:-
+docker logs (containerName)
+It will shows the container logs related to container.
+
+docker logs -f (containerName)
+It Will shows the logs related to container in real time
+
+docker logs -t (containerName)
+It Will shows the logs related to container in real time with time stamps
+
+docker inspect (containerName)
+It will shows the details/metadata about the container.
+
+docker top (containerName)
+It will shows all the processes related to the container.
+
+docker stats (containerName)
+It will shows the resources (CPU,RAM) Usage related to the Container.
+
+docker diff (containerName)
+It will shows the any files are changes since container StartUp
+
+docker run -d --name (containerName) (imageName) (command) 
+docker attach (containerName) 
+This Command is Used to attch a command to container and see output related to that container inside of our container.
+
+docker exec -it (containerName) /bin/bash
+It is used into container terminal 
+
+docker system info
+This Command is used to display system wide information
+
+docker system purne
+This Command is Used to delete
+all Stopped containers
+
+Unused networks
+
+Dangling images (not tagged or used by any container)
+
+Build cache
+
+docker container related commands:-
+docker rmi -f $(docker images -q)
+it will removes the all danglig images inside the server.
+
+docker images -q
+it will displayes the all image IDs
+
+docker image purne
+It will removes the all dangling Images.
+
+docker tag (newtag) imagename
+This command is used to tag the docker image with the old docker image. Generally new tag is used to tag with the new registry ane repository details.
+
+docker container related commands:-
+
+docker run -d -p --name=(containerName) (hostport):(containerport) (imageName)
+This Command is used to run a container in detach mode.
+
+docker ps 
+It will 
+
+docker ps -a
+
+docker ps -q
+It will lists the only running containers IDs
+
+docker ps -aq
+It will lists the all containers IDs including (stopped and running)
+
+docker restart (container name/ID)
+It will restart the container 
+
+docker stop (container/ID)
+It will stops the container.Allows grace period
+
+docker kill (container ID)
+It will kills container with out grace period.
+
+docker rm -f (containerName)
+It will removes the container forcefully.
+
+docker rm -f $(docker ps -aq --filter status="exited")
+It will delete all the stooped containers. 
+
+docker ps -aq --filter status="paused"
+It will display the all paused containers.
+
+
+
+
+
+
+
+
+docker build 
+
+
+docker login -u (dockerusername) -p (password)
