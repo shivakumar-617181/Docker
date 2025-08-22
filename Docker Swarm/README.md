@@ -22,7 +22,7 @@ Docker Swarm is a Docker Native Container Orchestration Engine Built On Top of D
 
 **8).** Here The Scheduling of the Containers Have Two Modes.
 
-       A). **Global-Mode:- ** One Container will Automatically Schedule the on Each Node. You Cant Able to Setup the Scale-in and Scale-Down for the Global Replication Mode Containers. Most Suitable for Monitering, Logs and For Networking type of the Pods. 
+       A). **Global-Mode:- **  One Container will Automatically Schedule the on Each Node. You Can`t Able to Setup the Scale-in and Scale-Down for the Global Replication Mode Containers. Most Suitable for Monitering, Logs and For Networking type of the Pods. 
 
        
        B). **Replica Mode:- **  All Our Application Containers are Deployed Into Clustrer in the Form Replica Mode. We Can Scal-up and Scale-down Based On the Load Getting For Our Pods. Based On the Replica Count Number Containers are Created In the Cluster.
