@@ -17,7 +17,7 @@ Docker Swarm is a Docker Native Container Orchestration Engine Built On Top of D
 
 **5).** **Overlay Networks**:- Allow Communication Between Services Across Nodes.
 
-**6).**  Based On The **Labels and Constraints** and **Resource Availability** you Can Decide the Where our Swarm Manager Will Schedule the Containers in Side The Cluster.
+**6).**  Based On The **Labels and Constraints** and **Resource Availability** Manager  Will Decide Where to Schedule the Containers Inside The Cluster.
 
 **7).** You Can Drain the Nodes, Manager For the Patching and Installing Updates In Our Cluster. 
 
