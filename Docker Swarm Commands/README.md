@@ -36,13 +36,12 @@ This Command is used to remove the Service.
 
 This Command is used to remove the node from the Cluster.
 
-**docker service scale <service-name>=<desired number of replicas>**
+**docker service scale (service-name)=(desired number of replicas)**
 
 This Comand is used to scale the Replicas for respective Service.
 
-**docker node update <node-name> --label-add <key>=<value>**
+**docker node update (node-name) --label-add (key)=(value)**
 
 This Command is Used to Update/add the label for the Cluster.
 
 
-This Command is Used to Update/add the label for the Cluster.
