@@ -79,7 +79,7 @@ services:
     networks:  # Network Section
       - backend
     volumes:    # Volume Mounts Section
-      - db_data:/var/lib/mysql           # Persist database data
+      - db_data:/var/lib/mysql           # Persist database Mount Point
     deploy:
       replicas: 1
       resources:
