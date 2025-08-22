@@ -1,1 +1,1 @@
-**You Can Find The Docker Commands According To The Folder Structure.**
+**You Can Find The Docker Containerized Platform Commands According To The Folder Structure.**
