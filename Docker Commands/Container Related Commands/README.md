@@ -47,6 +47,5 @@ It is Used to copy files from local host server directory to running container p
 It will delete all the stoped containers. 
 
 **docker ps -aq --filter status="paused"**
-It will displays the paused Containers.
-It will display the all paused containers.
+
 It will display the all paused containers.
